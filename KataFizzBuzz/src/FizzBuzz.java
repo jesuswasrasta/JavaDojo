@@ -1,10 +1,19 @@
 public class FizzBuzz {
     public String Say(int number)
     {
-        if(number == 3)
+        String result = "";
+        if(number % 3 == 0)
         {
-            return "Fizz";
+            result += "Fizz";
         }
-        return String.valueOf(number);
+        if(number % 5 == 0)
+        {
+            result += "Buzz";
+        }
+        if (result == "")
+        {
+            result = String.valueOf(number);
+        }
+        return result;
     }
 }

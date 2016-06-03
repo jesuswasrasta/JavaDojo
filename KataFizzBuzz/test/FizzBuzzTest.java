@@ -1,46 +1,35 @@
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
-	FizzBuzz _fizzBuzz;
-
-	@BeforeClass
-	public void Setup(){
-		_fizzBuzz = new FizzBuzz();
-	}
-
-    @Test
-    public void Input_1_Must_Return_1() {
-        String actualResult = _fizzBuzz.Say(1);
-
-        assertEquals("1", actualResult);
-    }
-
-    @Test
-    public void Input_2_Must_Return_2() {
-        String actualResult = _fizzBuzz.Say(2);
-
-        assertEquals("2", actualResult);
-    }
-
-    @Test
-    public void Input_3_Must_Return_Fizz() {
-        String actualResult = _fizzBuzz.Say(3);
-
-        assertEquals("Fizz", actualResult);
-    }
-
 	@DataProvider(name = "Numbers")
 	public static Object[][] Numbers(){
-		return new Object[][]{{1,"1"}, {2, "2"}, {3, "Fizz"}};
+		return new Object[][]{
+				{1, "1"},
+				{2, "2"},
+				{3, "Fizz"},
+				{4, "4"},
+				{5, "Buzz"},
+				{6, "Fizz"},
+				{7, "7"},
+				{8, "8"},
+				{9, "Fizz"},
+				{10, "Buzz"},
+				{11, "11"},
+				{12, "Fizz"},
+				{13, "13"},
+				{14, "14"},
+				{15, "FizzBuzz"},
+		};
 	}
 
 	@Test(dataProvider = "Numbers")
 	public void FizzBuzzTests(int number, String expectedResult) {
-        String actualResult = _fizzBuzz.Say(number);
+		FizzBuzz fizzBuzz = new FizzBuzz();
+        String actualResult = fizzBuzz.Say(number);
+
         assertEquals(expectedResult, actualResult);
     }
 }
