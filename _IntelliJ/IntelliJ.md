@@ -11,3 +11,10 @@ Istruzioni:
 * importa resharper.jar
 * nelle keymap seleziona il nuovo profilo creato, "ReSharper" (ne viene creato anche uno chiamato "ReSharper OSX")
 
+##Varie
+Rimosso file header
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+
+
