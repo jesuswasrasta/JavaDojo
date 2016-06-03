@@ -12,10 +12,10 @@ For numbers which are multiples of both three and five print "FizzBuzz".
 ## First rule
 You can write NO production code except to pass a failing test case.
 ##Second rule
-You can only wtite enough of a test case to demonstrate a failure (compiler errors are failures).
+You can only write enough of a test case to demonstrate a failure (compiler errors are failures).
 ##Third rule
 You can only write enough production code to pass the currently failing test case.
 
-Red - make a failing test case 
-Green - make the test pass 
-Blue - refactor 
+Red - make a failing test case
+Green - make the test pass
+Blue - refactor  
