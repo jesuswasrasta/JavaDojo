@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaDojo.iml" filepath="$PROJECT_DIR$/.idea/JavaDojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KataFizzBuzz/KataFizzBuzz.iml" filepath="$PROJECT_DIR$/KataFizzBuzz/KataFizzBuzz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KataStringCalculator/KataStringCalculator.iml" filepath="$PROJECT_DIR$/KataStringCalculator/KataStringCalculator.iml" />
+    </modules>
+  </component>
+</project>
